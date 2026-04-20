@@ -58,11 +58,11 @@ export default function Products({ onNavigate }: ProductsProps) {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
+          <p data-aos="fade-up" className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
             Our Catalogue
           </p>
-          <h1 className="text-5xl font-extrabold text-white mb-4">Products</h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
+          <h1 data-aos="fade-up" data-aos-delay="100" className="text-5xl font-extrabold text-white mb-4">Products</h1>
+          <p data-aos="fade-up" data-aos-delay="200" className="text-gray-300 text-lg max-w-2xl">
             30+ precision-engineered HVAC products across six categories — manufactured
             in-house at our Bahadurgarh facility.
           </p>
@@ -133,7 +133,7 @@ export default function Products({ onNavigate }: ProductsProps) {
                 const Icon = CATEGORY_ICONS[cat];
                 const catProducts = PRODUCTS.filter((p) => p.category === cat);
                 return (
-                  <div key={cat}>
+                  <div key={cat} data-aos="fade-up">
                     <div className="flex items-center gap-3 mb-6">
                       <div className="w-10 h-10 bg-teal-brand rounded-lg flex items-center justify-center flex-shrink-0">
                         <Icon className="w-5 h-5 text-white" />
@@ -187,7 +187,7 @@ export default function Products({ onNavigate }: ProductsProps) {
         className="py-16"
         style={{ background: 'linear-gradient(135deg, #1a3c5e 0%, #112840 100%)' }}
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="fade-up" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Need custom specifications or sizing?
           </h2>

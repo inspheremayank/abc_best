@@ -96,12 +96,12 @@ export default function Home({ onNavigate }: HomeProps) {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-teal-brand/20 border border-teal-brand/40 text-teal-brand text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-wider uppercase">
+            <div data-aos="fade-up" className="inline-flex items-center gap-2 bg-teal-brand/20 border border-teal-brand/40 text-teal-brand text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-2 h-2 bg-teal-brand rounded-full animate-pulse" />
               Manufacturer &amp; Exporter | Since 2006
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+            <h1 data-aos="fade-up" data-aos-delay="100" className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
               30+ Years of
               <br />
               <span style={{ color: '#00A0B0' }}>Engineering</span>
@@ -109,13 +109,13 @@ export default function Home({ onNavigate }: HomeProps) {
               Excellence
             </h1>
 
-            <p className="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
+            <p data-aos="fade-up" data-aos-delay="200" className="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
               Modern Engineering Industries is a leading manufacturer and exporter of HVAC
               equipment — Air Handling Units, Air Washers, Fan Coil Units, Grills, Clean
               Room Equipment, and more — trusted by India's most demanding clients.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div data-aos="fade-up" data-aos-delay="300" className="flex flex-wrap gap-4">
               <button
                 onClick={() => handleNavigate('products')}
                 className="flex items-center gap-2 bg-teal-brand hover:bg-teal-dark text-white font-semibold px-8 py-4 rounded transition-all duration-200 text-base"
@@ -138,8 +138,8 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="bg-teal-brand">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {STATS.map(({ value, label, icon: Icon }) => (
-              <div key={label} className="flex items-center gap-4 text-white">
+            {STATS.map(({ value, label, icon: Icon }, idx) => (
+              <div key={label} data-aos="fade-up" data-aos-delay={`${idx * 100}`} className="flex items-center gap-4 text-white">
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
@@ -157,7 +157,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div data-aos="fade-right">
               <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
                 About Modern Engineering Industries
               </p>
@@ -187,7 +187,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
 
             {/* Visual card */}
-            <div className="grid grid-cols-2 gap-4">
+            <div data-aos="fade-left" className="grid grid-cols-2 gap-4">
               {[
                 { label: 'Works Area', value: '700 sq mtr', sub: 'Bahadurgarh facility' },
                 { label: 'Sectors Served', value: '5+', sub: 'Industries covered' },
@@ -211,7 +211,7 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* Product Categories */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div data-aos="fade-up" className="text-center mb-12">
             <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
               What We Manufacture
             </p>
@@ -225,9 +225,11 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PRODUCT_CATEGORIES.map(({ icon: Icon, title, description }) => (
+            {PRODUCT_CATEGORIES.map(({ icon: Icon, title, description }, idx) => (
               <button
                 key={title}
+                data-aos="fade-up"
+                data-aos-delay={`${(idx % 3) * 100}`}
                 onClick={() => handleNavigate('products')}
                 className="group bg-white rounded-xl p-7 border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-left"
               >
@@ -260,7 +262,7 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* Clients */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div data-aos="fade-up" className="text-center mb-12">
             <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
               Trusted By
             </p>
@@ -272,9 +274,11 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
-            {CLIENT_LOGOS.map((client) => (
+            {CLIENT_LOGOS.map((client, idx) => (
               <div
                 key={client}
+                data-aos="zoom-in"
+                data-aos-delay={`${(idx % 4) * 75}`}
                 className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-6 flex items-center justify-center hover:border-teal-brand hover:bg-teal-brand/5 transition-all duration-300 group"
               >
                 <span className="text-sm font-semibold text-gray-500 group-hover:text-navy-brand text-center transition-colors">
@@ -309,7 +313,7 @@ export default function Home({ onNavigate }: HomeProps) {
             backgroundSize: '50px 50px',
           }}
         />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="fade-up" className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Ready to discuss your HVAC requirements?
           </h2>

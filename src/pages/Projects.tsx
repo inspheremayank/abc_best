@@ -48,11 +48,11 @@ export default function Projects({ onNavigate }: ProjectsProps) {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
+          <p data-aos="fade-up" className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
             Track Record
           </p>
-          <h1 className="text-5xl font-extrabold text-white mb-4">Projects &amp; Clients</h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
+          <h1 data-aos="fade-up" data-aos-delay="100" className="text-5xl font-extrabold text-white mb-4">Projects &amp; Clients</h1>
+          <p data-aos="fade-up" data-aos-delay="200" className="text-gray-300 text-lg max-w-2xl">
             A trusted partner for India's most demanding HVAC projects — from critical care
             hospitals to metro tunnels and Formula 1 circuits.
           </p>
@@ -62,7 +62,7 @@ export default function Projects({ onNavigate }: ProjectsProps) {
       {/* Notable Highlights */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div data-aos="fade-up" className="text-center mb-10">
             <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
               Landmark Installations
             </p>
@@ -70,9 +70,11 @@ export default function Projects({ onNavigate }: ProjectsProps) {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {NOTABLE_HIGHLIGHTS.map(({ project, detail, sector }) => (
+            {NOTABLE_HIGHLIGHTS.map(({ project, detail, sector }, idx) => (
               <div
                 key={project}
+                data-aos="zoom-in"
+                data-aos-delay={`${(idx % 4) * 75}`}
                 className="group bg-gray-50 border border-gray-100 rounded-xl p-6 hover:border-teal-brand hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-9 h-9 bg-teal-brand/10 group-hover:bg-teal-brand rounded-lg flex items-center justify-center mb-4 transition-colors duration-300">
@@ -169,9 +171,11 @@ export default function Projects({ onNavigate }: ProjectsProps) {
               'Johnson Medical', 'American Embassy', 'DMRC', 'Ranbaxy',
               'NTPC', 'BHEL', 'Tata Power', 'Apollo Hospital',
               'Max Healthcare', 'Fortis Hospitals', 'Sun Pharmaceuticals', 'Cipla',
-            ].map((client) => (
+            ].map((client, idx) => (
               <div
                 key={client}
+                data-aos="zoom-in"
+                data-aos-delay={`${(idx % 4) * 75}`}
                 className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-5 flex items-center justify-center hover:border-teal-brand hover:bg-teal-brand/5 transition-all duration-300 group"
               >
                 <span className="text-sm font-semibold text-gray-500 group-hover:text-navy-brand text-center transition-colors">
@@ -188,7 +192,7 @@ export default function Projects({ onNavigate }: ProjectsProps) {
         className="py-16"
         style={{ background: 'linear-gradient(135deg, #1a3c5e 0%, #112840 100%)' }}
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="fade-up" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Join our growing list of satisfied clients
           </h2>

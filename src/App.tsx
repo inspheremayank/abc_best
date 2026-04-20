@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,6 +13,14 @@ type Page = 'home' | 'about' | 'products' | 'projects' | 'contact';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
+
+  useEffect(() => {
+    AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 80 });
+  }, []);
+
+  useEffect(() => {
+    AOS.refreshHard();
+  }, [currentPage]);
 
   const handleNavigate = (page: Page) => {
     setCurrentPage(page);

@@ -85,11 +85,11 @@ export default function About({ onNavigate }: AboutProps) {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
+          <p data-aos="fade-up" className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
             Who We Are
           </p>
-          <h1 className="text-5xl font-extrabold text-white mb-4">About MEI</h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
+          <h1 data-aos="fade-up" data-aos-delay="100" className="text-5xl font-extrabold text-white mb-4">About MEI</h1>
+          <p data-aos="fade-up" data-aos-delay="200" className="text-gray-300 text-lg max-w-2xl">
             Three decades of engineering expertise — delivered through innovation,
             commitment, and a relentless focus on quality.
           </p>
@@ -100,7 +100,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div>
+            <div data-aos="fade-right">
               <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
                 Our Story
               </p>
@@ -132,13 +132,13 @@ export default function About({ onNavigate }: AboutProps) {
             </div>
 
             {/* Timeline */}
-            <div>
+            <div data-aos="fade-left">
               <h3 className="text-xl font-bold text-navy-brand mb-6">Our Journey</h3>
               <div className="relative">
                 <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200" />
                 <div className="space-y-6">
-                  {MILESTONES.map(({ year, event }) => (
-                    <div key={year} className="flex gap-6 pl-12 relative">
+                  {MILESTONES.map(({ year, event }, idx) => (
+                    <div key={year} data-aos="fade-left" data-aos-delay={`${idx * 75}`} className="flex gap-6 pl-12 relative">
                       <div className="absolute left-0 w-8 h-8 bg-teal-brand rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 z-10">
                         <CheckCircle className="w-4 h-4" />
                       </div>
@@ -158,7 +158,7 @@ export default function About({ onNavigate }: AboutProps) {
       {/* VICTORY Section */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div data-aos="fade-up" className="text-center mb-14">
             <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
               Our Core Values
             </p>
@@ -175,6 +175,8 @@ export default function About({ onNavigate }: AboutProps) {
             {VICTORY.map(({ letter, word, description }, idx) => (
               <div
                 key={letter}
+                data-aos="fade-up"
+                data-aos-delay={`${(idx % 4) * 100}`}
                 className={`bg-white rounded-xl p-7 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ${
                   idx === 6 ? 'sm:col-span-2 lg:col-span-1 xl:col-span-1' : ''
                 }`}
@@ -197,7 +199,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div data-aos="fade-right">
               <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
                 Manufacturing Capability
               </p>
@@ -233,7 +235,7 @@ export default function About({ onNavigate }: AboutProps) {
               </ul>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div data-aos="fade-left" className="grid grid-cols-2 gap-4">
               {INFRA.map(({ label, value, icon: Icon }) => (
                 <div
                   key={label}
@@ -277,6 +279,7 @@ export default function About({ onNavigate }: AboutProps) {
             {[
               {
                 name: 'Mr. K.K. Mehta',
+
                 role: 'Partner & Technical Director',
                 bio: 'With over 30 years in HVAC engineering, Mr. K.K. Mehta is the technical backbone of MEI. He oversees product design, manufacturing standards, and quality systems, and is the driving force behind MEI\'s innovation in double-skin AHU technology.',
               },
@@ -285,9 +288,11 @@ export default function About({ onNavigate }: AboutProps) {
                 role: 'Partner & Operations Director',
                 bio: 'Mr. R.C. Mehta brings decades of operational and commercial expertise to MEI. He manages client relationships, project execution, and the Bahadurgarh manufacturing facility, ensuring every order is delivered to specification and on schedule.',
               },
-            ].map(({ name, role, bio }) => (
+            ].map(({ name, role, bio }, idx) => (
               <div
                 key={name}
+                data-aos="fade-up"
+                data-aos-delay={`${idx * 150}`}
                 className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-navy-brand rounded-full flex items-center justify-center text-white text-xl font-bold mb-5">
@@ -308,7 +313,7 @@ export default function About({ onNavigate }: AboutProps) {
         className="py-16 relative"
         style={{ background: 'linear-gradient(135deg, #1a3c5e 0%, #112840 100%)' }}
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="fade-up" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Want to know more about our capabilities?
           </h2>

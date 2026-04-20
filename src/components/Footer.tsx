@@ -5,6 +5,20 @@ type Page = 'home' | 'about' | 'products' | 'projects' | 'contact';
 interface FooterProps {
   onNavigate: (page: Page) => void;
 }
+function BrandLogo() {
+  return (
+    <svg width="160" height="60" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+      <path d="M52,230 C80,170 130,155 175,170 C215,183 240,160 258,135" fill="none" stroke="#ffffff" strokeWidth="10" strokeLinecap="round"/>
+      <path d="M52,252 C80,192 130,177 175,192 C215,205 240,182 258,157" fill="none" stroke="#4A52C8" strokeWidth="10" strokeLinecap="round"/>
+      <path d="M52,274 C80,214 130,199 175,214 C215,227 240,204 258,179" fill="none" stroke="#ffffff" strokeWidth="10" strokeLinecap="round"/>
+      <path d="M38,308 C60,200 130,95 268,108" fill="none" stroke="#ffffff" strokeWidth="10" strokeLinecap="round"/>
+      <text x="295" y="218" fontFamily="Arial Black, sans-serif" fontWeight="900" fontSize="78px" fill="#ffffff">BESTTECH</text>
+      <line x1="296" y1="232" x2="648" y2="232" stroke="#ffffff" strokeWidth="1.5"/>
+      <text x="298" y="256" fontFamily="Arial, sans-serif" fontWeight="600" fontSize="15.5px" fill="#ffffff" letterSpacing="4">ENGINEERING SOLUTION LLP</text>
+      <text x="299" y="280" fontFamily="Arial, sans-serif" fontSize="12.5px" fill="#4A52C8" letterSpacing="0.8" fontStyle="italic">Building Innovation, Engineering Excellence</text>
+    </svg>
+  );
+}
 
 export default function Footer({ onNavigate }: FooterProps) {
   const handleNav = (page: Page) => {
@@ -17,25 +31,9 @@ export default function Footer({ onNavigate }: FooterProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-teal-brand rounded flex items-center justify-center flex-shrink-0">
-                <Wind className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="text-white font-bold text-sm">MEI</div>
-                <div className="text-teal-brand text-[10px] tracking-wider uppercase">
-                  Modern Engineering Industries
-                </div>
-              </div>
+          <div className="mb-4">
+              <BrandLogo />
             </div>
-            <p className="text-sm leading-relaxed text-gray-400 mb-4">
-              Manufacturer & exporter of precision HVAC equipment since 2006. Trusted by
-              leading hospitals, pharma companies, hotels, and infrastructure projects
-              across India.
-            </p>
-            <div className="text-xs text-gray-500">ISO-compliant manufacturing | Pan-India delivery</div>
-          </div>
 
           {/* Quick Links */}
           <div>

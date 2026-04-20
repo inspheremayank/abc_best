@@ -65,11 +65,11 @@ export default function Contact() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
+          <p data-aos="fade-up" className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
             Get In Touch
           </p>
-          <h1 className="text-5xl font-extrabold text-white mb-4">Contact Us</h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
+          <h1 data-aos="fade-up" data-aos-delay="100" className="text-5xl font-extrabold text-white mb-4">Contact Us</h1>
+          <p data-aos="fade-up" data-aos-delay="200" className="text-gray-300 text-lg max-w-2xl">
             Send us your requirements and our team will respond within one business day.
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Enquiry Form */}
-            <div className="lg:col-span-3">
+            <div data-aos="fade-right" className="lg:col-span-3">
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
                 <h2 className="text-2xl font-bold text-navy-brand mb-2">Send an Enquiry</h2>
                 <p className="text-gray-500 text-sm mb-8">
@@ -260,7 +260,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-6">
+            <div data-aos="fade-left" className="lg:col-span-2 space-y-6">
               {/* Office Card */}
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-7">
                 <div className="flex items-center gap-3 mb-5">
