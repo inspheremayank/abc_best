@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-teal {
+    @apply bg-teal-brand text-white px-6 py-3 font-semibold rounded transition-all duration-200 hover:bg-teal-dark inline-block;
+  }
+  .btn-outline-teal {
+    @apply border-2 border-teal-brand text-teal-brand px-6 py-3 font-semibold rounded transition-all duration-200 hover:bg-teal-brand hover:text-white inline-block;
+  }
+  .section-heading {
+    @apply text-3xl font-bold text-navy-brand mb-3;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+}
