@@ -286,6 +286,7 @@ export default function Products({ onNavigate }: ProductsProps) {
                       <span className="inline-flex items-center gap-1 text-sm font-semibold text-teal-brand">
                         View details <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </span>
+                      
                       </div>
                     </div>
                   </button>
