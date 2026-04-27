@@ -1,240 +1,255 @@
-export type ProductCategory =
-  | 'AC Equipment'
-  | 'Ventilation'
-  | 'Air Distribution'
-  | 'Clean Room'
-  | 'Acoustic'
-  | 'Fabrication';
+export type ProductCategory = 'AC Equipment' | 'Ventilation' | 'Air Distribution' | 'Clean Room' | 'Acoustic' | 'Fabrication';
 
 export interface Product {
   id: string;
   name: string;
   description: string;
   category: ProductCategory;
+  image: string;
 }
 
-export const CATEGORIES: ProductCategory[] = [
-  'AC Equipment',
-  'Ventilation',
-  'Air Distribution',
-  'Clean Room',
-  'Acoustic',
-  'Fabrication',
-];
-
 export const PRODUCTS: Product[] = [
-  // AC Equipment
+  // ================= AC Equipment =================
   {
     id: 'ahu',
     name: 'Air Handling Unit (AHU)',
     description:
-      'Double-skin AHUs engineered for precision air conditioning, available in custom capacities with factory-tested performance guarantees.',
+      'Double-skin AHUs engineered for precision air conditioning.',
     category: 'AC Equipment',
+    image: '/images/products/ahu.png',
   },
   {
     id: 'fcu',
     name: 'Fan Coil Unit (FCU)',
     description:
-      'Compact fan coil units for zoned climate control in commercial buildings, hospitals, and hotels. Horizontal and vertical configurations.',
+      'Compact fan coil units for zoned climate control.',
     category: 'AC Equipment',
+    image: '/images/products/fcu.png',
   },
   {
     id: 'cooling-coils',
     name: 'Cooling Coils',
     description:
-      'High-efficiency chilled water and DX cooling coils fabricated from copper tubes and aluminium fins for maximum thermal performance.',
+      'High-efficiency chilled water and DX cooling coils.',
     category: 'AC Equipment',
+    image: '/images/products/cooling-coils.png',
   },
 
-  // Ventilation
+  // ================= Ventilation =================
   {
     id: 'air-washer',
     name: 'Air Washer',
     description:
-      'Industrial air washers for humidification, cooling, and filtration. Ideal for textile mills, pharmaceutical plants, and process industries.',
+      'Industrial air washers for humidification and cooling.',
     category: 'Ventilation',
+    image: '/images/products/air-washer.png',
   },
   {
     id: 'scrubber',
     name: 'Scrubber',
     description:
-      'Wet and dry scrubbers for industrial exhaust treatment, fume extraction, and odour control across manufacturing and chemical plants.',
+      'Industrial scrubbers for exhaust and pollution control.',
     category: 'Ventilation',
+    image: '/images/products/scrubber.png',
   },
   {
     id: 'fan-section',
     name: 'Fan Section / Exhaust Unit',
     description:
-      'Robust fan sections and exhaust units designed for high-volume air movement in industrial, commercial, and HVAC applications.',
+      'High-performance exhaust and ventilation units.',
     category: 'Ventilation',
+    image: '/images/products/fan-section.png',
   },
   {
     id: 'axial-fan',
     name: 'Axial Flow Fan',
     description:
-      'Heavy-duty axial flow fans for process cooling, ventilation shafts, and tunnel exhausts. Available in MS, SS, and GI construction.',
+      'Heavy-duty axial fans for industrial ventilation.',
     category: 'Ventilation',
+    image: '/images/products/axial-fan.png',
   },
   {
     id: 'fan-accessories',
     name: 'Fan Accessories',
     description:
-      'Complete range of fan accessories including inlet cones, discharge boxes, flexible connections, vibration isolators, and guards.',
+      'Accessories like guards, dampers, connectors, etc.',
     category: 'Ventilation',
+    image: '/images/products/fan-accessories.png',
   },
   {
     id: 'big-industrial-fan',
-    name: 'Big Industrial Fan (up to 6.5m dia)',
+    name: 'Big Industrial Fan',
     description:
-      'Large-diameter HVLS industrial fans up to 6.5 metres for warehouses, aircraft hangars, and large industrial spaces.',
+      'Large HVLS fans for warehouses and factories.',
     category: 'Ventilation',
+    image: '/images/products/industrial-fan.png',
   },
 
-  // Air Distribution
+  // ================= Air Distribution =================
   {
     id: 'grills',
-    name: 'Grills (SS / AL / MS)',
+    name: 'Grills',
     description:
-      'Extruded aluminium, stainless steel, and mild steel grills for supply, return, and transfer air applications. Custom sizes available.',
+      'Aluminium and steel grills for airflow control.',
     category: 'Air Distribution',
+    image: '/images/products/grill.png',
   },
   {
     id: 'diffusers',
     name: 'Diffusers',
     description:
-      'Square, round, and linear diffusers for uniform air distribution in false ceilings. Available with adjustable deflectors for flexible throw patterns.',
+      'Air diffusers for uniform airflow distribution.',
     category: 'Air Distribution',
+    image: '/images/products/diffuser.png',
   },
   {
     id: 'dampers',
-    name: 'Dampers (SS / AL / MS)',
+    name: 'Dampers',
     description:
-      'Volume control, fire, smoke, and multi-leaf dampers fabricated in stainless steel, aluminium, and mild steel. Motorized options available.',
+      'Volume and fire dampers for airflow regulation.',
     category: 'Air Distribution',
+    image: '/images/products/damper.png',
   },
   {
     id: 'louvers',
-    name: 'Louvers (SS / AL / MS)',
+    name: 'Louvers',
     description:
-      'Fixed and operable louvers for fresh air intake, exhaust discharge, and architectural screening. Weatherproof and corrosion-resistant.',
+      'Weather-resistant louvers for ventilation.',
     category: 'Air Distribution',
+    image: '/images/products/louver.png',
   },
   {
     id: 'bird-screen',
     name: 'Bird Screen',
     description:
-      'Heavy-gauge galvanised or stainless steel bird screens to protect HVAC intakes and exhausts from birds, debris, and insects.',
+      'Protective screens for HVAC openings.',
     category: 'Air Distribution',
+    image: '/images/products/bird-screen.png',
   },
 
-  // Clean Room
+  // ================= Clean Room =================
   {
     id: 'laf',
     name: 'Laminar Air Flow Unit',
     description:
-      'Horizontal and vertical LAF units providing ISO Class 5 unidirectional airflow for pharmaceutical production and critical processes.',
+      'Clean airflow units for sterile environments.',
     category: 'Clean Room',
+    image: '/images/products/ffu.png',
   },
   {
     id: 'guided-airflow',
     name: 'Guided Air Flow Unit',
     description:
-      'Guided airflow units delivering controlled, contamination-free environments for sensitive manufacturing and research applications.',
+      'Controlled airflow systems for clean rooms.',
     category: 'Clean Room',
+    image: '/images/products/ffu.png',
   },
   {
     id: 'hepa-housing',
     name: 'HEPA Filter Housing',
     description:
-      'Leak-proof HEPA filter housings for terminal filtration in clean rooms, operating theatres, and pharmaceutical filling lines.',
+      'High-efficiency filtration systems.',
     category: 'Clean Room',
+    image: '/images/products/hepa.png',
   },
   {
     id: 'ra-riser',
     name: 'RA Riser',
     description:
-      'Return air risers for clean room systems, providing efficient and balanced return air paths to maintain positive pressure differentials.',
+      'Return air systems for clean environments.',
     category: 'Clean Room',
+    image: '/images/products/riser.png',
   },
 
-  // Acoustic
+  // ================= Acoustic =================
   {
     id: 'fan-silencers',
     name: 'Fan Silencers',
     description:
-      'Inline and plenum-type fan silencers for attenuation of fan noise in HVAC ducts, generator rooms, and industrial exhaust systems.',
+      'Noise reduction silencers for HVAC systems.',
     category: 'Acoustic',
+    image: '/images/products/attenuator.png',
   },
   {
     id: 'duct-silencers',
     name: 'Duct Silencers',
     description:
-      'Rectangular and circular duct silencers (splitter type) for broad-spectrum noise reduction in commercial HVAC installations.',
+      'Noise control for duct systems.',
     category: 'Acoustic',
+    image: '/images/products/attenuator.png',
   },
   {
     id: 'acoustic-louvers',
     name: 'Acoustic Louvers',
     description:
-      'Weather-resistant acoustic louvers combining ventilation with sound attenuation for plant rooms, substations, and machinery enclosures.',
+      'Louvers with sound attenuation.',
     category: 'Acoustic',
+    image: '/images/products/acoustic-louver.png',
   },
   {
     id: 'acoustic-doors',
     name: 'Acoustic Doors',
     description:
-      'Heavy-duty acoustic doors with STC ratings up to 45 dB for generator enclosures, testing facilities, and noise-sensitive environments.',
+      'Soundproof doors for industrial use.',
     category: 'Acoustic',
+    image: '/images/products/acoustic-door.png',
   },
   {
     id: 'drum-tester',
     name: 'Drum Tester Enclosure',
     description:
-      'Custom-engineered acoustic enclosures for engine drum testing and high-noise industrial testing environments.',
+      'Acoustic enclosures for testing environments.',
     category: 'Acoustic',
+    image: '/images/products/enclosure.png',
   },
   {
     id: 'fuel-filling',
     name: 'Fuel Filling Enclosure',
     description:
-      'Secure, acoustically treated fuel filling enclosures for generator sets and industrial diesel storage in noise-restricted zones.',
+      'Noise-controlled enclosures for fuel systems.',
     category: 'Acoustic',
+    image: '/images/products/enclosure.png',
   },
 
-  // Fabrication
+  // ================= Fabrication =================
   {
     id: 'high-temp-bellows',
     name: 'High Temperature Bellows',
     description:
-      'Flexible expansion joints and bellows for high-temperature duct systems, boiler exhausts, and industrial process piping.',
+      'Flexible joints for high-temperature ducts.',
     category: 'Fabrication',
+    image: '/images/products/duct.png',
   },
   {
     id: 'high-temp-dampers',
-    name: 'High Temp Low Leakage Dampers',
+    name: 'High Temp Dampers',
     description:
-      'Precision-engineered dampers rated for elevated temperatures with ultra-low leakage for critical isolation in power and process plants.',
+      'High-performance industrial dampers.',
     category: 'Fabrication',
+    image: '/images/products/damper.png',
   },
   {
     id: 'water-shower',
     name: 'Water Shower Chambers',
     description:
-      'Industrial water shower and pre-cooling chambers for inlet air conditioning and pre-treatment in gas turbine and process applications.',
+      'Pre-cooling and filtration chambers.',
     category: 'Fabrication',
+    image: '/images/products/duct.png',
   },
   {
     id: 'kitchen-exhaust',
-    name: 'Kitchen Exhaust Ducts (MS/SS)',
+    name: 'Kitchen Exhaust Ducts',
     description:
-      'Heavy-duty kitchen exhaust ductwork in mild steel and stainless steel for commercial kitchens, hotels, and restaurant chains.',
+      'Heavy-duty kitchen ventilation systems.',
     category: 'Fabrication',
+    image: '/images/products/kitchen-exhaust.png',
   },
   {
     id: 'ms-frames',
     name: 'MS Base Frames & Tanks',
     description:
-      'Custom mild steel base frames, skids, and tanks for HVAC equipment mounting, day tanks, and general industrial fabrication.',
+      'Custom fabrication structures.',
     category: 'Fabrication',
+    image: '/images/products/tank.png',
   },
 ];

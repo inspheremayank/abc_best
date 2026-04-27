@@ -80,11 +80,11 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-wrap gap-6 justify-center sm:justify-between items-center text-white">
             <a
-              href="tel:+919810399171"
+              href="tel:+919996906359"
               className="flex items-center gap-2.5 hover:text-white/80 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-semibold">+91 98103 99171</span>
+              <span className="font-semibold">+91 99969 06359</span>
             </a>
             <a
               href="mailto:meind2006@gmail.com"
@@ -262,7 +262,7 @@ export default function Contact() {
             {/* Contact Info */}
             <div data-aos="fade-left" className="lg:col-span-2 space-y-6">
               {/* Office Card */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-7">
+              {/* <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-7">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-10 h-10 bg-teal-brand rounded-lg flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-white" />
@@ -279,7 +279,7 @@ export default function Contact() {
                   <br />
                   India
                 </address>
-              </div>
+              </div> */}
 
               {/* Works Card */}
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-7">
@@ -288,16 +288,20 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Manufacturing Works</div>
-                    <div className="font-bold text-navy-brand text-sm">Bahadurgarh, Haryana</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Head Office</div>
+                    <div className="font-bold text-navy-brand text-sm">BESTTECH ENGINEERING SOLUTION LLP</div>
                   </div>
                 </div>
                 <address className="not-italic text-sm text-gray-600 leading-relaxed">
-                  Plot 1716, MIE Part B
+                  PLOT NO. 104, M.I.E PART-A, BAHADURGARH,
                   <br />
-                  Bahadurgarh, Haryana – 124 507
+                  DISTT. JHAJJAR (HARYANA) 124507
                   <br />
                   India
+                  <br />
+                  LLP ID NO. - AGW - 8386
+                  <br/>
+                  GSTIN: 06ABGFB6968H1Z4
                 </address>
               </div>
 
@@ -305,7 +309,7 @@ export default function Contact() {
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-7 space-y-4">
                 <h3 className="font-bold text-navy-brand text-sm mb-4">Direct Contact</h3>
                 <a
-                  href="tel:+919810399171"
+                  href="tel:+919996906359"
                   className="flex items-center gap-3 text-sm text-gray-600 hover:text-teal-brand transition-colors group"
                 >
                   <div className="w-9 h-9 bg-teal-brand/10 group-hover:bg-teal-brand rounded-lg flex items-center justify-center transition-colors flex-shrink-0">
@@ -313,7 +317,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium">Call Us</div>
-                    <div className="font-semibold">+91 98103 99171</div>
+                    <div className="font-semibold">+91 99969 06359</div>
                   </div>
                 </a>
                 <a

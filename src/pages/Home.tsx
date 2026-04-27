@@ -110,7 +110,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </h1>
 
             <p data-aos="fade-up" data-aos-delay="200" className="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
-              Modern Engineering Industries is a leading manufacturer and exporter of HVAC
+              Besttech Engineering Solution LLP is a leading manufacturer and exporter of HVAC
               equipment — Air Handling Units, Air Washers, Fan Coil Units, Grills, Clean
               Room Equipment, and more — trusted by India's most demanding clients.
             </p>
@@ -159,7 +159,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
               <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
-                About Modern Engineering Industries
+                About Besttech Engineering Solution LLP
               </p>
               <h2 className="text-4xl font-bold text-navy-brand mb-6 leading-tight">
                 North India's Premier HVAC Manufacturer
@@ -329,10 +329,10 @@ export default function Home({ onNavigate }: HomeProps) {
               Send an Enquiry
             </button>
             <a
-              href="tel:+919810399171"
+              href="tel:+919996906359"
               className="border-2 border-white/30 hover:border-teal-brand text-white font-semibold px-8 py-4 rounded transition-all duration-200 text-base inline-flex items-center gap-2"
             >
-              Call +91 98103 99171
+              Call +91 99969 06359
             </a>
           </div>
         </div>

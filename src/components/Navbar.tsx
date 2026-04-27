@@ -12,7 +12,6 @@ const NAV_LINKS: { label: string; page: Page }[] = [
   { label: 'Home', page: 'home' },
   { label: 'About', page: 'about' },
   { label: 'Products', page: 'products' },
-  { label: 'Projects', page: 'projects' },
   { label: 'Contact', page: 'contact' },
 ];
 
@@ -80,12 +79,12 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 {label}
               </button>
             ))}
-            <button
+            {/* <button
               onClick={() => handleNav('contact')}
               className="ml-3 bg-teal-brand hover:bg-teal-dark text-white text-sm font-semibold px-5 py-2 rounded transition-colors duration-200"
             >
               Get Quote
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile Toggle */}
@@ -116,12 +115,12 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 {label}
               </button>
             ))}
-            <button
+            {/* <button
               onClick={() => handleNav('contact')}
               className="block w-full text-center mt-2 bg-teal-brand hover:bg-teal-dark text-white text-sm font-semibold px-5 py-3 rounded transition-colors"
             >
               Get Quote
-            </button>
+            </button> */}
           </div>
         </div>
       )}

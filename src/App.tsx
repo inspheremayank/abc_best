@@ -34,7 +34,7 @@ export default function App() {
         {currentPage === 'home' && <Home onNavigate={handleNavigate} />}
         {currentPage === 'about' && <About onNavigate={handleNavigate} />}
         {currentPage === 'products' && <Products onNavigate={handleNavigate} />}
-        {currentPage === 'projects' && <Projects onNavigate={handleNavigate} />}
+        {/* {currentPage === 'projects' && <Projects onNavigate={handleNavigate} />} */}
         {currentPage === 'contact' && <Contact />}
       </main>
 
