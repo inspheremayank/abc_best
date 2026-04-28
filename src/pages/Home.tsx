@@ -135,7 +135,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-teal-brand">
+      {/* <section className="bg-teal-brand">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {STATS.map(({ value, label, icon: Icon }, idx) => (
@@ -151,10 +151,10 @@ export default function Home({ onNavigate }: HomeProps) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Brief */}
-      <section className="bg-white py-20">
+      {/* <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
@@ -186,7 +186,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
             </div>
 
-            {/* Visual card */}
+            
             <div data-aos="fade-left" className="grid grid-cols-2 gap-4">
               {[
                 { label: 'Works Area', value: '700 sq mtr', sub: 'Bahadurgarh facility' },
@@ -206,7 +206,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Product Categories */}
       <section className="bg-gray-50 py-20">
@@ -260,7 +260,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Clients */}
-      <section className="bg-white py-20">
+      {/* <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div data-aos="fade-up" className="text-center mb-12">
             <p className="text-teal-brand font-semibold text-sm uppercase tracking-widest mb-3">
@@ -298,7 +298,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Banner */}
       <section
