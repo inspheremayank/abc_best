@@ -17,7 +17,7 @@ const NAV_LINKS: { label: string; page: Page }[] = [
 
 function BrandLogo() {
   return (
-    <img src="/images/logo.png" alt="Logo" className="w-48 h-auto" />
+    <img src="/images/logo.png" alt="Logo" className="w-80 h-auto" />
   );
 }
 
@@ -46,7 +46,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <button
             onClick={() => handleNav('home')}
@@ -61,7 +61,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <button
                 key={page}
                 onClick={() => handleNav(page)}
-                className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-2 rounded text-md font-medium transition-all duration-200 ${
                   currentPage === page
                     ? 'text-teal-brand border-b-2 border-teal-brand'
                     : 'text-gray-300 hover:text-white hover:bg-white/10'

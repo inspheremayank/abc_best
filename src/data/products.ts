@@ -11,18 +11,18 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   // ================= AC Equipment =================
   {
-    id: 'ahu',
-    name: 'Air Handling Unit (AHU)',
+    id: 'ahu-floor',
+    name: 'Floor Mounted Air Handling Unit (AHU)',
     description:
-      'Double-skin AHUs engineered for precision air conditioning.',
+      'Heavy-duty floor-mounted AHUs designed for efficient air circulation in large commercial and industrial spaces.',
     category: 'AC Equipment',
-    image: '/images/products/ahu.png',
+    image: '/images/products/ahu.webp',
   },
   {
     id: 'fcu',
     name: 'Fan Coil Unit (FCU)',
     description:
-      'Compact fan coil units for zoned climate control.',
+      'Compact fan coil units ideal for zoned temperature control in residential and commercial environments.',
     category: 'AC Equipment',
     image: '/images/products/fcu.png',
   },
@@ -30,9 +30,81 @@ export const PRODUCTS: Product[] = [
     id: 'cooling-coils',
     name: 'Cooling Coils',
     description:
-      'High-efficiency chilled water and DX cooling coils.',
+      'High-performance cooling coils engineered for effective heat exchange in HVAC systems.',
     category: 'AC Equipment',
     image: '/images/products/cooling-coils.png',
+  },
+  {
+    id: 'ahu-ceiling',
+    name: 'Ceiling Suspended Air Handling Unit (AHU)',
+    description:
+      'Space-efficient ceiling-mounted AHUs suitable for areas with limited floor space.',
+    category: 'AC Equipment',
+    image: '/images/products/ceiling-suspended.png',
+  },
+  {
+    id: 'ahu-vertical',
+    name: 'Vertical Air Handling Unit (AHU)',
+    description:
+      'Vertical AHUs designed for compact installation while maintaining high airflow efficiency.',
+    category: 'AC Equipment',
+    image: '/images/products/vertical-ahu.png',
+  },
+  {
+    id: 'decu',
+    name: 'Direct Evaporative Cooling Unit (DECU)',
+    description:
+      'Eco-friendly cooling units that use evaporative technology for energy-efficient temperature control.',
+    category: 'AC Equipment',
+    image: '/images/products/decu.png',
+  },
+  {
+    id: 'dry-scrubber',
+    name: 'Dry Scrubber',
+    description:
+      'Air pollution control system that removes contaminants using dry chemical processes.',
+    category: 'AC Equipment',
+    image: '/images/products/dry.png',
+  },
+  {
+    id: 'wet-scrubber',
+    name: 'Wet Scrubber',
+    description:
+      'Effective air cleaning system that removes pollutants using liquid-based filtration.',
+    category: 'AC Equipment',
+    image: '/images/products/wet.png',
+  },
+  {
+    id: 'ducts',
+    name: 'Ducts',
+    description:
+      'Durable air ducts designed for efficient airflow distribution in HVAC systems.',
+    category: 'AC Equipment',
+    image: '/images/products/ducts.png',
+  },
+  {
+    id: 'exhaust-unit',
+    name: 'Exhaust Unit',
+    description:
+      'High-performance exhaust units for removing stale air, fumes, and contaminants from indoor spaces.',
+    category: 'AC Equipment',
+    image: '/images/products/exhaust-unit.png',
+  },
+  {
+    id: 'ventilation-unit',
+    name: 'Ventilation Unit',
+    description:
+      'Ventilation systems that ensure a continuous supply of fresh air while maintaining indoor air quality.',
+    category: 'AC Equipment',
+    image: '/images/products/ventilation-unit.png',
+  },
+  {
+    id: 'cooling-pads',
+    name: 'Cooling Pads',
+    description:
+      'Highly absorbent cooling pads designed for efficient evaporative cooling in air systems.',
+    category: 'AC Equipment',
+    image: '/images/products/cooling-pad.png',
   },
 
   // ================= Ventilation =================
@@ -46,11 +118,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'scrubber',
-    name: 'Scrubber',
+    name: 'Two Stage Air Washer',
     description:
       'Industrial scrubbers for exhaust and pollution control.',
     category: 'Ventilation',
-    image: '/images/products/scrubber.png',
+    image: '/images/products/two-stage-washer.png',
   },
   {
     id: 'fan-section',
@@ -69,38 +141,22 @@ export const PRODUCTS: Product[] = [
     image: '/images/products/axial-fan.png',
   },
   {
-    id: 'fan-accessories',
-    name: 'Fan Accessories',
-    description:
-      'Accessories like guards, dampers, connectors, etc.',
-    category: 'Ventilation',
-    image: '/images/products/fan-accessories.png',
-  },
-  {
     id: 'big-industrial-fan',
     name: 'Big Industrial Fan',
     description:
       'Large HVLS fans for warehouses and factories.',
     category: 'Ventilation',
-    image: '/images/products/industrial-fan.png',
+    image: '/images/products/big-smart-fan.webp',
   },
 
   // ================= Air Distribution =================
   {
     id: 'grills',
-    name: 'Grills',
+    name: 'Grills and Diffusers',
     description:
       'Aluminium and steel grills for airflow control.',
     category: 'Air Distribution',
-    image: '/images/products/grill.png',
-  },
-  {
-    id: 'diffusers',
-    name: 'Diffusers',
-    description:
-      'Air diffusers for uniform airflow distribution.',
-    category: 'Air Distribution',
-    image: '/images/products/diffuser.png',
+    image: '/images/products//grills.webp',
   },
   {
     id: 'dampers',
@@ -108,7 +164,7 @@ export const PRODUCTS: Product[] = [
     description:
       'Volume and fire dampers for airflow regulation.',
     category: 'Air Distribution',
-    image: '/images/products/damper.png',
+    image: '/images/products/dampers.jpeg',
   },
   {
     id: 'louvers',
@@ -116,7 +172,7 @@ export const PRODUCTS: Product[] = [
     description:
       'Weather-resistant louvers for ventilation.',
     category: 'Air Distribution',
-    image: '/images/products/louver.png',
+    image: '/images/products/louvers.jpeg',
   },
   {
     id: 'bird-screen',
@@ -124,33 +180,18 @@ export const PRODUCTS: Product[] = [
     description:
       'Protective screens for HVAC openings.',
     category: 'Air Distribution',
-    image: '/images/products/bird-screen.png',
+    image: '/images/products/bird-screen.webp',
   },
 
   // ================= Clean Room =================
-  {
-    id: 'laf',
-    name: 'Laminar Air Flow Unit',
-    description:
-      'Clean airflow units for sterile environments.',
-    category: 'Clean Room',
-    image: '/images/products/ffu.png',
-  },
-  {
-    id: 'guided-airflow',
-    name: 'Guided Air Flow Unit',
-    description:
-      'Controlled airflow systems for clean rooms.',
-    category: 'Clean Room',
-    image: '/images/products/ffu.png',
-  },
+  
   {
     id: 'hepa-housing',
     name: 'HEPA Filter Housing',
     description:
       'High-efficiency filtration systems.',
     category: 'Clean Room',
-    image: '/images/products/hepa.png',
+    image: '/images/products/hepa-filter-housing.jpeg',
   },
   {
     id: 'ra-riser',
@@ -158,7 +199,7 @@ export const PRODUCTS: Product[] = [
     description:
       'Return air systems for clean environments.',
     category: 'Clean Room',
-    image: '/images/products/riser.png',
+    image: '/images/products/riser.jpeg',
   },
 
   // ================= Acoustic =================
@@ -168,7 +209,7 @@ export const PRODUCTS: Product[] = [
     description:
       'Noise reduction silencers for HVAC systems.',
     category: 'Acoustic',
-    image: '/images/products/attenuator.png',
+    image: '/images/products/fan-silencers.jpg',
   },
   {
     id: 'duct-silencers',
@@ -176,80 +217,26 @@ export const PRODUCTS: Product[] = [
     description:
       'Noise control for duct systems.',
     category: 'Acoustic',
-    image: '/images/products/attenuator.png',
+    image: '/images/products/duct-silencers.jpeg',
   },
   {
-    id: 'acoustic-louvers',
-    name: 'Acoustic Louvers',
+    id: 'duct-collectors',
+    name: 'Duct Collectors',
     description:
-      'Louvers with sound attenuation.',
+      'Noise control for duct systems.',
     category: 'Acoustic',
-    image: '/images/products/acoustic-louver.png',
-  },
-  {
-    id: 'acoustic-doors',
-    name: 'Acoustic Doors',
-    description:
-      'Soundproof doors for industrial use.',
-    category: 'Acoustic',
-    image: '/images/products/acoustic-door.png',
-  },
-  {
-    id: 'drum-tester',
-    name: 'Drum Tester Enclosure',
-    description:
-      'Acoustic enclosures for testing environments.',
-    category: 'Acoustic',
-    image: '/images/products/enclosure.png',
-  },
-  {
-    id: 'fuel-filling',
-    name: 'Fuel Filling Enclosure',
-    description:
-      'Noise-controlled enclosures for fuel systems.',
-    category: 'Acoustic',
-    image: '/images/products/enclosure.png',
+    image: '/images/products/dust-collector.png',
   },
 
+
   // ================= Fabrication =================
-  {
-    id: 'high-temp-bellows',
-    name: 'High Temperature Bellows',
-    description:
-      'Flexible joints for high-temperature ducts.',
-    category: 'Fabrication',
-    image: '/images/products/duct.png',
-  },
-  {
-    id: 'high-temp-dampers',
-    name: 'High Temp Dampers',
-    description:
-      'High-performance industrial dampers.',
-    category: 'Fabrication',
-    image: '/images/products/damper.png',
-  },
-  {
-    id: 'water-shower',
-    name: 'Water Shower Chambers',
-    description:
-      'Pre-cooling and filtration chambers.',
-    category: 'Fabrication',
-    image: '/images/products/duct.png',
-  },
+  
   {
     id: 'kitchen-exhaust',
     name: 'Kitchen Exhaust Ducts',
     description:
       'Heavy-duty kitchen ventilation systems.',
     category: 'Fabrication',
-    image: '/images/products/kitchen-exhaust.png',
-  },
-  {
-    id: 'ms-frames',
-    name: 'MS Base Frames & Tanks',
-    description:
-      'Custom fabrication structures.',
-    category: 'Fabrication',
-    image: '/images/products/tank.png',
-  },
+    image: '/images/products/kitchen.jpeg',
+  }
 ];

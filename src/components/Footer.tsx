@@ -20,8 +20,10 @@ function BrandLogo() {
   );
 }
 
-const phoneNumber = "919671652484"; // with country code
-const message = "Hello, I need help";
+const phoneNumber = "919996906359"; // with country code
+const message = `Hi! Welcome to Besttech Solutions!
+We provide high-quality HVAC & Air Pollution Control products.
+Tell us your requirement and we'll get back to you within minutes!`;
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
